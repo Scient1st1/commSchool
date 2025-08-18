@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Tables</a>
+        </li>
+        <li>
+          <a href="register.html">Register</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <h1>Some Kind of Table</h1>
+      <div>
+        <style>
+          table {
+            border-collapse: collapse;
+            text-align: center;
+          }
+          table * {
+            padding: 5px;
+          }
+        </style>
+        <table border="1">
+          <caption>
+            Students Table
+          </caption>
+          <thead>
+            <tr>
+              <th rowspan="2">Heading</th>
+              <th>Student</th>
+              <th colspan="3">Details</th>
+            </tr>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Roll Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">Student List</td>
+              <td>1</td>
+              <td>Victor</td>
+              <td>Computer Science</td>
+              <td>12345</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Williams</td>
+              <td>Electronics</td>
+              <td>7890</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Harry</td>
+              <td>Civil</td>
+              <td>45678</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Harry</td>
+              <td>Civil</td>
+              <td>45678</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Harry</td>
+              <td>Civil</td>
+              <td>45678</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Table Footer</th>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Roll Number</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
