@@ -9,6 +9,7 @@
 
 # commScholl Html & Css
 
-დავალება 3 - 19.08.2025 (იდენტური საიტის გვერდი - https://www.hardisonbuilding.com);
+დავალება 3 - 19.08.2025 (იდენტური საიტის გვერდი - https://www.hardisonbuilding.com)
+<br/>
 დავალების არსი: https://classroom.google.com/c/Nzg5NDczMzQyMjk1/a/Nzk5MDE1NTIzODQy/details
 <br/>
