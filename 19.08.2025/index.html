@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Home Builder</title>
+    <link rel="icon" href="src/images/favicon-32x32.webp" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/css/default.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="flex wrap justify-between align-center">
+          <div class="logo">
+            <a href="#">
+              <img src="src/images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <ul class="main-menu flex align-center">
+            <li class="dropdown">
+              <a class="uppercase" href="#">Company</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="uppercase" href="#"> why work with us </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="uppercase" href="#">Find a home</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="uppercase" href="#">Communities </a>
+                </li>
+                <li>
+                  <a class="uppercase" href="#">Inventory Homes </a>
+                </li>
+                <li>
+                  <a class="uppercase" href="#">Home Plans </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="uppercase" href="#">Warranty claim</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="uppercase" href="#"> Warranty </a>
+                </li>
+                <li>
+                  <a class="uppercase" href="#">Energy Program </a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="uppercase" href="#">interactive gallery</a></li>
+            <li>
+              <a class="uppercase different" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="video overflow relative">
+        <div class="container absolute absolute-centered">
+          <h1 class="text-white italic fs-xxl text-center">
+            Top Home Builder in Wilmington, NC
+          </h1>
+          <p class="text-white text-center fs-xl italic">
+            Handcrafted Homes. Lifelong Relationships.
+          </p>
+          <div class="flex justify-center gap-sm">
+            <a href="#" class="btn uppercase">View Move-In-Ready</a>
+            <a href="#" class="btn uppercase">View Communities</a>
+          </div>
+        </div>
+        <video autoplay muted loop>
+          <source src="src/video/Hardison-Hero-Video.webm" />
+        </video>
+      </section>
+      <section class="book">
+        <div class="container">
+          <div class="flex">
+            <div class="book-details">
+              <img src="src/images/books.webp" alt="books" />
+            </div>
+            <div class="book-details">
+              <h2 class="text-blue fs-lg uppercase">
+                Simplify Your Home Search: Download Our Relocation Lookbook!
+              </h2>
+              <p>
+                Get the facts about moving to Southeastern, NC, from taxes to
+                top areas and details about the communities we build in.
+              </p>
+              <form id="form" autocomplete="on">
+                <div class="form-control">
+                  <label class="fs-sm" for="name">Name*</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name*"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="fs-sm" for="email">Email*</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email*"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <button id="submit" type="submit" class="uppercase text-blue">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="houses">
+        <div class="container">
+          <div class="flex gap-xl houses-box">
+            <div class="house-lg has-bg relative house-1">
+              <a
+                href="#"
+                class="view-more absolute absolute-centered btn uppercase"
+                >view all homes</a
+              >
+              <div class="house-details">
+                <h3 class="uppercase text-white">Move-In Ready Homes</h3>
+                <p class="text-white">New homes starting from the $400's</p>
+              </div>
+            </div>
+            <div class="house-sm has-bg relative house-2">
+              <a
+                href="#"
+                class="view-more absolute absolute-centered btn uppercase"
+              >
+                View Photos</a
+              >
+              <div class="house-details">
+                <h3 class="uppercase text-white">Photo Gallery</h3>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-xl houses-box">
+            <div class="house-lg has-bg relative house-4">
+              <a
+                href="#"
+                class="view-more absolute absolute-centered btn uppercase"
+                >View All Communities</a
+              >
+              <div class="house-details">
+                <h3 class="uppercase text-white">Our Communities</h3>
+                <p class="text-white">
+                  We've built in over 14 communities in New Hanover, Pender, and
+                  Brunswick county
+                </p>
+              </div>
+            </div>
+            <div
+              class="house-sm house-testimonial has-bg relative order-first house-3"
+            >
+              <div class="testimonial-details">
+                <h3 class="title uppercase text-white">Satisfied Customers</h3>
+                <p class="text-white itelic">
+                  “Hardison Building Co. was great to work with. We absolutely
+                  love our house. They were able to take care of our requests
+                  and are still working with us to make sure everything is
+                  perfect after moving in!”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-xl houses-box">
+            <div class="house-lg has-bg relative house-5">
+              <a
+                href="#"
+                class="view-more absolute absolute-centered btn uppercase"
+                >View Interactive Tours</a
+              >
+              <div class="house-details">
+                <h3 class="uppercase text-white">View Interactive Tours</h3>
+                <p class="text-white">
+                  Check out our homes, view 3D interactive tours and photo
+                  galleries
+                </p>
+              </div>
+            </div>
+            <div class="house-sm house-testimonial has-bg relative house-6">
+              <div class="testimonial-details">
+                <h3 class="title uppercase text-white">Why Work With Us</h3>
+                <p class="text-white itelic">
+                  “Hardison Building Co. was great to work with. We absolutely
+                  love our house. They were able to take care of our requests
+                  and are still working with us to make sure everything is
+                  perfect after moving in!”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-plan">
+        <div class="container">
+          <div class="flex">
+            <div class="plan-text">
+              <h2 class="title text-blue uppercase fs-lg">
+                Welcome to the Fort Landing Home Plan
+              </h2>
+              <p>
+                Take a virtual tour of our Fort Landing home plan and others.
+                Browse our full library of interactive virtual tours online and
+                explore our home plans from the comfort of your couch.
+              </p>
+              <div>
+                <a href="#" class="btn uppercase">Tale a tour</a>
+              </div>
+            </div>
+            <div class="plan-video">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/vBZpp-sbdhk?si=lKqaNegUh3LwS3pN"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="flex">
+            <div class="about-image">
+              <div class="about-image-bg">
+                <img src="src/images/aboutUsHome.jpg" alt="about us image" />
+              </div>
+            </div>
+            <div class="about-text">
+              <h2 class="uppercase text-blue title">About us</h2>
+              <p>
+                We have been able to attain superior home sites in convenient
+                and desirable areas of the southern Cape Fear Region. Whether
+                you are considering a home from $400,000 to over $3.5M, we would
+                be honored to meet with you and build your brand-new home on
+                your property or ours.
+              </p>
+              <div>
+                <a href="#" class="btn uppercase"> Why We're Different </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container text-center">
+          <h2 class="uppercase text-blue">Want More Information?</h2>
+          <div>
+            <a href="#" class="btn uppercase">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-top flex justify-between">
+          <div class="logo">
+            <img src="src/images/logo.svg" alt="Logo" />
+          </div>
+          <div class="footer-contact">
+            <p>107 Stokley Dr.</p>
+            <p>Wilmington, NC 28403</p>
+            <p>(910) 794-1501</p>
+            <p>Get Directions</p>
+            <div class="socials fs-lg">
+              <span>
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span>
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bot flex justify-between align-center">
+          <p class="copyright">
+            Copyright &copy; 2025 Hardison Building. All rights reserved.
+            <br />
+            <a href="#" target="_blank">Website Design</a>
+            and
+            <a href="#">Digital Marketing</a>
+            by
+            <a href="#" target="_blank">
+              <img src="src/images/designedBy.svg" alt="designed by logo" />
+            </a>
+          </p>
+          <nav>
+            <ul class="footer-menu flex gap-sm">
+              <li>
+                <a href="#" class="text-white uppercase fs-sm"
+                  >Why work with us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white uppercase fs-sm">Find a home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white uppercase fs-sm">Warranty</a>
+              </li>
+              <li>
+                <a href="#" class="text-white uppercase fs-sm">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-white uppercase fs-sm">News</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
