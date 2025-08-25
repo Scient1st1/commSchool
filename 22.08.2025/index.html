@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container flex">
+      <aside>
+        <div class="user-box">
+          <span class="user-with-badge">
+            <img src="src/images/mainUser.svg" alt="user" />
+            <span class="badge flex align-center justify-center">4</span>
+          </span>
+          <h2>Samantha</h2>
+          <p>samantha@email.com</p>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Expences</a>
+          </li>
+          <li>
+            <a href="#">Wallets</a>
+          </li>
+          <li>
+            <a href="#">Summary</a>
+          </li>
+          <li>
+            <a href="#">Accounts</a>
+          </li>
+          <li>
+            <a href="#">Accounts</a>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="flex w-full">
+        <div class="expences-lists">
+          <div class="charts-box">
+            <div class="user-expences">
+              <div class="flex align-center">
+                <h1>Expences</h1>
+                <nav class="flex align-center w-full justify-end">
+                  <a class="user-image" href="#">
+                    <img src="src/images/user1.svg" alt="user1" />
+                  </a>
+                  <a href="#" class="user-image">
+                    <img src="src/images/user2.svg" alt="user2" />
+                  </a>
+                  <a href="#" class="user-image">
+                    <img src="src/images/user3.svg" alt="user3" />
+                  </a>
+                  <a href="#" class="plus">
+                    <img src="src/images/plusIcon.svg" alt="add user" />
+                  </a>
+                </nav>
+              </div>
+              <p>01 - 25 March, 2020</p>
+            </div>
+            <div class="chart">
+              <img src="src/images/stats.svg" alt="expences charts" />
+            </div>
+          </div>
+          <div class="dates">
+            <div class="expences-date">
+              <h2 class="flex align-center justify-between">
+                Today
+                <span class="dots">
+                  <img src="src/images/dots.svg" alt="option dots" />
+                </span>
+              </h2>
+              <ul>
+                <li class="flex align-center justify-between">
+                  <span class="icon">
+                    <img src="src/images/grocery.svg" alt="grocery" />
+                  </span>
+                  <div
+                    class="details-box w-full flex align-center justify-between"
+                  >
+                    <div>
+                      <h3>Grocery</h3>
+                      <p>5:12 pm . Belanja di pasar</p>
+                    </div>
+                    <span class="price"> -326.800 </span>
+                  </div>
+                </li>
+                <li class="flex align-center justify-between">
+                  <span class="icon">
+                    <img
+                      src="src/images/transportation.svg"
+                      alt="transportation"
+                    />
+                  </span>
+                  <div
+                    class="details-box w-full flex align-center justify-between"
+                  >
+                    <div>
+                      <h3>Transportation</h3>
+                      <p>5:12 pm . Belanja di pasar</p>
+                    </div>
+                    <span class="price"> -15.000 </span>
+                  </div>
+                </li>
+                <li class="flex align-center justify-between">
+                  <span class="icon">
+                    <img src="src/images/housing.svg" alt="housing" />
+                  </span>
+                  <div
+                    class="details-box w-full flex align-center justify-between"
+                  >
+                    <div>
+                      <h3>Housing</h3>
+                      <p>5:12 pm . Belanja di pasar</p>
+                    </div>
+                    <span class="price"> -185.750 </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="expences-date">
+              <h2 class="flex align-center justify-between">
+                Monday 23, March 2020
+                <span class="dots">
+                  <img src="src/images/dots.svg" alt="option dots" />
+                </span>
+              </h2>
+              <ul>
+                <li class="flex align-center justify-between">
+                  <span class="icon">
+                    <img src="src/images/food&drink.svg" alt="food" />
+                  </span>
+                  <div
+                    class="details-box w-full flex align-center justify-between"
+                  >
+                    <div>
+                      <h3>Food and Drink</h3>
+                      <p>5:12 pm . Belanja di pasar</p>
+                    </div>
+                    <span class="price"> -156.000 </span>
+                  </div>
+                </li>
+                <li class="flex align-center justify-between">
+                  <span class="icon">
+                    <img
+                      src="src/images/entertainment.svg"
+                      alt="entertainment"
+                    />
+                  </span>
+                  <div
+                    class="details-box w-full flex align-center justify-between"
+                  >
+                    <div>
+                      <h3>Entertainment</h3>
+                      <p>5:12 pm . Belanja di pasar</p>
+                    </div>
+                    <span class="price"> -35.200 </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="save-money">
+          <h2 class="title">Where your money go?</h2>
+          <ul>
+            <li class="food">Food and Drinks</li>
+            <li class="shopping">Shopping</li>
+            <li class="housing">Housing</li>
+            <li class="transportation">Transportation</li>
+            <li class="vehicle">Vehicle</li>
+          </ul>
+          <div class="save-tips">
+            <div class="images flex justify-between">
+              <span class="box">
+                <img src="src/images/boxes.svg" alt="boxes" />
+              </span>
+              <span class="flower">
+                <img src="src/images/flower.svg" alt="flower" />
+              </span>
+            </div>
+            <h2>Save more money</h2>
+            <p>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim.
+            </p>
+            <div class="view-tips">
+              <a href="#">VIEW TIPS</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -13,3 +13,7 @@
 <br/>
 დავალების არსი: https://classroom.google.com/c/Nzg5NDczMzQyMjk1/a/Nzk5MDE1NTIzODQy/details
 <br/>
+დავალება 4 - 22.08.2025
+<br/>
+დავალების არსი: https://www.figma.com/design/2bVheR6CYY9FlBABFI6EDm/Dashboard--Community-?node-id=0-2&t=YcUuxS1WWyIWnV7v-0
+<br/>
