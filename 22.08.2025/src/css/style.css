@@ -307,3 +307,48 @@ span.badge {
   font-size: 13px;
   border-radius: 8px;
 }
+
+/* responsive  */
+
+@media only screen and (max-width: 1200px) {
+  .expences-lists,
+  .save-money {
+    padding: 20px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .dashboard-container {
+    gap: 20px;
+    padding: 20px;
+  }
+  main {
+    display: block !important;
+  }
+  .expences-lists,
+  .save-money {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  aside {
+    margin: 0;
+    text-align: center;
+  }
+  .user-box {
+    margin-bottom: 40px;
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .expences-date > ul li > span {
+    margin-right: 5px;
+  }
+}
