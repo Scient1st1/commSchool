@@ -1,0 +1,212 @@
+/* Custom Fonts */
+@font-face {
+    font-family: mon-b;
+    src: url('../fonts/mon-b/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+    font-family: mon-r;
+    src: url('../fonts/mon-r/Montserrat-Regular.ttf');
+}
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: mon-r, sans-serif;
+}
+
+a {
+    color: #cebba3;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: #e2ae69;
+    text-decoration: none;
+}
+
+/* Main Menu Styles */
+.mainmenu li a {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: mon-r, sans-serif;
+    font-size: 11px;
+    color: #fbe2cb;
+}
+.mainmenu li a:hover, .mainmenu li a.active {
+    color: #e2ae69;
+}
+
+/* Search Button Pseudo-element */
+.search_click::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    bottom: 25%;
+    width: 2px;
+    background-color: #fbe2cb;
+}
+
+/* Article Image Hover Effect */
+.item_image a {
+    position: relative;
+    display: block;
+    z-index: 20;
+}
+.item_image a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0;
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    transform-origin: 50% 50%;
+    border-top: 2px solid #d1a162;
+    border-bottom: 2px solid #d1a162;
+    z-index: 30;
+    transition: all .4s ease;
+}
+.item_image a:hover:after {
+    opacity: 1;
+    transform: rotate3d(0, 0, 1, 0deg) scale3d(1, 1, 1);
+}
+
+/* Swing Animation */
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.swing:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: translateX(-50%) rotate(45deg);
+}
+.swing:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    border-radius: 50%;
+    background: #e2ae69;
+}
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+
+/* Travel Animation Card */
+.cardWrapper {
+    height: 200px;
+    perspective: 500px;
+    margin: 5px;
+}
+.cardWrapper:hover .rotate {
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+    box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+.cardWrapper .rotate {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    perspective: 1000px;
+    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+.cardWrapper .rotate .front, .cardWrapper .rotate .back {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #d1a162;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+}
+.cardWrapper .rotate .front { z-index: 2; transform: rotateX(0); }
+.cardWrapper .rotate .back { z-index: 1; transform: rotateX(180deg); }
+.cardWrapper .rotate .image { position: relative; transform-origin: 50% 100%; }
+
+.cardWrapper .rotate .front .image { animation: ride 0.5s ease-in-out infinite; }
+.cardWrapper .rotate .front .roadWrapper { position: absolute; top: 133px; left: 0; right: 0; margin: auto; width: 200px; height: 3px; overflow: hidden; }
+
+.cardWrapper .rotate .back .image { animation: fly 2s ease-in-out infinite; z-index: 2; filter: grayscale(40%); }
+.cardWrapper .rotate .back .skyWrapper { position: absolute; top: 23px; bottom: 0; left: 0; right: 0; margin: auto; width: 200px; height: 150px; overflow: hidden; }
+
+.cardWrapper .rotate .front .roadWrapper .line-1,
+.cardWrapper .rotate .front .roadWrapper .line-2,
+.cardWrapper .rotate .front .roadWrapper .line-3,
+.cardWrapper .rotate .front .roadWrapper .line-4,
+.cardWrapper .rotate .front .roadWrapper .line-5,
+.cardWrapper .rotate .front .roadWrapper .line-6,
+.cardWrapper .rotate .front .roadWrapper .line-7,
+.cardWrapper .rotate .back .skyWrapper .cloud-1,
+.cardWrapper .rotate .back .skyWrapper .cloud-2,
+.cardWrapper .rotate .back .skyWrapper .cloud-3,
+.cardWrapper .rotate .back .skyWrapper .cloud-4,
+.cardWrapper .rotate .back .skyWrapper .cloud-5,
+.cardWrapper .rotate .back .skyWrapper .cloud-6,
+.cardWrapper .rotate .back .skyWrapper .cloud-7 {
+    position: absolute;
+    right: -25px;
+    top: 0;
+    height: 3px;
+    background: #4b4841;
+    border-radius: 3px;
+    animation-name: lines;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.cardWrapper .rotate .front .roadWrapper .line-1 { width: 4px; animation-duration: 1.08s; animation-delay: 1s; }
+.cardWrapper .rotate .front .roadWrapper .line-2 { width: 6px; animation-duration: 1.08s; animation-delay: 0.7s; }
+.cardWrapper .rotate .front .roadWrapper .line-3 { width: 8px; animation-duration: 1.08s; animation-delay: 1s; }
+.cardWrapper .rotate .front .roadWrapper .line-4 { width: 10px; animation-duration: 0.94s; animation-delay: 0.3s; }
+.cardWrapper .rotate .front .roadWrapper .line-5 { width: 12px; animation-duration: 1.08s; animation-delay: 0.9s; }
+.cardWrapper .rotate .front .roadWrapper .line-6 { width: 14px; animation-duration: 1.08s; animation-delay: 1s; }
+.cardWrapper .rotate .front .roadWrapper .line-7 { width: 16px; animation-duration: 1.08s; animation-delay: 0.4s; }
+
+.cardWrapper .rotate .back .skyWrapper .cloud-1 { top: 34px; width: 10.8px; animation-duration: 0.8s; animation-delay: 1s; }
+.cardWrapper .rotate .back .skyWrapper .cloud-2 { top: 48px; width: 18.6px; animation-duration: 0.8s; animation-delay: 0.5s; }
+.cardWrapper .rotate .back .skyWrapper .cloud-3 { top: 62px; width: 13.7px; animation-duration: 0.7s; animation-delay: 0.3s; }
+.cardWrapper .rotate .back .skyWrapper .cloud-4 { top: 76px; width: 10.1px; animation-duration: 0.7s; animation-delay: 0.8s; }
+.cardWrapper .rotate .back .skyWrapper .cloud-5 { top: 90px; width: 23.3px; animation-duration: 0.7s; animation-delay: 0.2s; }
+.cardWrapper .rotate .back .skyWrapper .cloud-6 { top: 104px; width: 18.2px; animation-duration: 0.7s; animation-delay: 0.9s; }
+.cardWrapper .rotate .back .skyWrapper .cloud-7 { top: 118px; width: 17.3px; animation-duration: 0.8s; animation-delay: 1s; }
+
+
+@keyframes ride {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.96); }
+}
+@keyframes fly {
+    0%, 100% { transform: translate3d(0, -10px, 0); }
+    50% { transform: translate3d(0, 10px, 0); }
+}
+@keyframes lines {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-250px, 0, 0); }
+}
