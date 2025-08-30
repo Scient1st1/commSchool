@@ -24,3 +24,10 @@
 <br/>
 დავალების არსი: https://classroom.google.com/c/Nzg5NDczMzQyMjk1/a/ODAwMDg3ODI2MjM4/details
 <br/>
+
+# Animations
+
+დავალება 6 - 29.08.2025
+<br/>
+დავალების არსი: https://classroom.google.com/c/Nzg5NDczMzQyMjk1/a/ODAwNzA5MzU4MjI3/details
+<br/>
